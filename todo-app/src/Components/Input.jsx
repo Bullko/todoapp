@@ -7,7 +7,6 @@ export default function Input() {
 
   function handleSubmit(e) {
     e.preventDefault();
-
     setTodos((currentTodos) => {
       return [
         ...currentTodos,
