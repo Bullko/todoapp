@@ -16,7 +16,7 @@ export default function Input() {
   function handleSubmit(e) {
     e.preventDefault();
     if (newItem.trim() === "") {
-      return alert("u need to add new task");
+      return;
     }
     setTodos((currentTodos) => {
       return [
