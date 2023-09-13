@@ -3,4 +3,54 @@
   margin: 0 auto;
   padding: 2rem;
   font-family: "Poppins";
+  text-align: center;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: #c2c2c2 1px solid;
+}
+
+.task-input {
+  width: 100%;
+  max-width: 500px;
+}
+
+.btn {
+  background-color: #ffffff;
+  border: 1px solid #2d5ae2;
+  color: #2d5ae2;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+ol {
+  width: 100%;
+  margin: 10px 10px;
+  text-align: left;
+}
+
+.danger {
+  background-color: rgba(255, 0, 0, 0.683);
+  border: none;
+  color: rgb(255, 255, 255);
 }

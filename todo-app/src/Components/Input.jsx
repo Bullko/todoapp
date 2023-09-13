@@ -15,6 +15,9 @@ export default function Input() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    if (newItem.trim() === "") {
+      return alert("u need to add new task");
+    }
     setTodos((currentTodos) => {
       return [
         ...currentTodos,
@@ -45,6 +48,7 @@ export default function Input() {
     <div className="input-form">
       <form onSubmit={handleSubmit}>
         <input
+          className="task-input"
           value={newItem}
           onChange={(e) => setNewItem(e.target.value)}
           type="text"
@@ -66,7 +70,12 @@ export default function Input() {
                 />
                 {todo.title}
               </label>
-              <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+              <button
+                className="btn danger"
+                onClick={() => deleteTodo(todo.id)}
+              >
+                Delete
+              </button>
             </li>
           );
         })}
